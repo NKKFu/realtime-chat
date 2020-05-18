@@ -23,7 +23,7 @@
 
 - Socket.io
 - Express
-- Bootstrap
+- ReactJS
+- Firebase Auth
 
 ## LICENSE MIT
-
