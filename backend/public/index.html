@@ -57,7 +57,7 @@
     </style>
 </head>
 
-<body onload="changeName()">
+<body>
     <div class="chat">
         <h2 style="margin-bottom: 30px;">Realtime Chat</h2>
         <ul id="messages">
@@ -69,19 +69,13 @@
     <div class="users_list">
         <h2>Users List</h2>
         <ul id="users">
-            <li>Gwoug</li>
-            <li>3141244</li>
+
         </ul>
     </div>
 </body>
 <script src="/socket.io/socket.io.js"></script>
 <script>
     const socket = io();
-
-    function changeName() {
-        const name = prompt("Please enter your name:");
-        socket.name = name;
-    }
 
     // Send a message
     function sendMessage() {
@@ -98,6 +92,18 @@
         messageElement.innerHTML = `<b>[ ${speaker} ]</b> ${message}`;
 
         messageList.append(messageElement);
+    });
+
+    // Receives a message
+    socket.on('users update', function (usersList) {
+        const messageList = document.getElementById('users');
+        messageList.innerHTML = '';
+
+        usersList.map((user) => {
+            const userObject = document.createElement('p');
+            userObject.innerHTML = `- ${user}`;
+            messageList.append(userObject);
+        });
     });
 </script>
 
