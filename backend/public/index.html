@@ -61,8 +61,7 @@
     <div class="chat">
         <h2 style="margin-bottom: 30px;">Realtime Chat</h2>
         <ul id="messages">
-            <li>Something</li>
-            <li>Something</li>
+
         </ul>
         <input id="message_content" autocomplete="off" /><button onclick="sendMessage()">Send</button>
     </div>
@@ -79,9 +78,10 @@
 
     // Send a message
     function sendMessage() {
-        const messageContent = document.getElementById('message_content').value;
+        const messageContent = document.getElementById('message_content');
+        socket.emit('chat message', socket.id, messageContent.value);
 
-        socket.emit('chat message', socket.name, messageContent);
+        messageContent.value = '';
     }
 
     // Receives a message
