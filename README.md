@@ -1,6 +1,8 @@
 # Realtime Chat 💬
 
-> Status: Em progresso.. ⚒️
+[![Languages](https://img.shields.io/github/languages/count/LauraBeatris/gofinances-api?style=flat-square)](#) [![Size](https://img.shields.io/github/repo-size/nkkfu/realtime-chat?style=flat-square)]() [![Size](https://img.shields.io/github/license/nkkfu/realtime-chat?style=flat-square)]()
+
+> Status: Em progresso (não deployado).. ⚒️
 
 > Descrição: Produzindo.. ⚒️
 
@@ -28,5 +30,17 @@
 - Socket.io
 - Express
 - SCSS
+
+## Quer contribuir?
+
+Você pode criar uma issue ou um commit, saiba como:
+
+### Criando uma issue
+
+> Produzindo.. ⚒️
+
+### Criando um commit
+
+> Produzindo.. ⚒️
 
 ## LICENSE MIT

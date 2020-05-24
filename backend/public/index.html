@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    <title>Socket.IO chat</title>
+    <title>Realtime Chat</title>
     <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
     <div class="chat">
-        <h2 style="margin-bottom: 30px;">Realtime Chat</h2>
+        <h2>Realtime Chat</h2>
         <ul id="messages">
 
         </ul>
@@ -22,38 +22,6 @@
     </div>
 </body>
 <script src="/socket.io/socket.io.js"></script>
-<script>
-    const socket = io();
-
-    // Send a message
-    function sendMessage() {
-        const messageContent = document.getElementById('message_content');
-        socket.emit('chat message', socket.id, messageContent.value);
-
-        messageContent.value = '';
-    }
-
-    // Receives a message
-    socket.on('chat message', function (speaker, message) {
-        const messageList = document.getElementById('messages');
-
-        const messageElement = document.createElement('li');
-        messageElement.innerHTML = `<b>[ ${speaker} ]</b> ${message}`;
-
-        messageList.append(messageElement);
-    });
-
-    // Receives a message
-    socket.on('users update', function (usersList) {
-        const messageList = document.getElementById('users');
-        messageList.innerHTML = '';
-
-        usersList.map((user) => {
-            const userObject = document.createElement('p');
-            userObject.innerHTML = `- ${user}`;
-            messageList.append(userObject);
-        });
-    });
-</script>
+<script src="./index.js"></script>
 
 </html>

@@ -13,13 +13,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font: 13px Helvetica, Arial;
+  font-family: Arial;
 }
 
 .chat {
-  -webkit-box-flex: 0.7;
-      -ms-flex: 0.7;
-          flex: 0.7;
+  background-color: #f8f8f8;
+  width: 70%;
+  overflow-y: auto;
+}
+
+.chat h2 {
+  padding: 20px;
 }
 
 .chat #messages {
@@ -42,19 +46,25 @@ body {
   border: 0;
   padding: 10px;
   width: 90%;
-  margin-right: 0.5%;
+  height: 35px;
+  border: 2px solid #82e0ff;
 }
 
 .chat button {
-  width: 9%;
+  height: 35px;
+  width: 10%;
   background: #82e0ff;
   border: none;
   padding: 10px;
 }
 
 .users_list {
-  -webkit-box-flex: 0.3;
-      -ms-flex: 0.3;
-          flex: 0.3;
+  width: 30%;
+  background-color: #e3ffe3;
+  padding: 20px;
+}
+
+.users_list h2 {
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=index.css.map */
