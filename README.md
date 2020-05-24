@@ -10,20 +10,23 @@
 
 ## Todo list
 
+- [x] Inicialização do projeto
+- [x] Chat funcional
+- [ ] Auth com o Google Firebase
+- [ ] Nome à usuários.
+- [ ] Show who’s online.
 - [ ] Deploy na Heroku
 - [ ] Alerta aos usuários quando alguém entrar ou sair.
-- [ ] Nome à usuários.
 - [ ] Otimizar o sistema de mensagens.
 - [ ] Add “{user} is typing” functionality.
-- [ ] Show who’s online.
 - [ ] Add private messaging.
 - [ ] Share your improvements!
+- [ ] Adicionar o projeto ao ReactJS
 
 ## Tecnologias utilizadas
 
 - Socket.io
 - Express
-- ReactJS
-- Firebase Auth
+- SCSS
 
 ## LICENSE MIT
