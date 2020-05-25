@@ -17,11 +17,11 @@
 - [x] Chat funcional
 - [x] Motrar quem está online
 - [x] Histórico de mensagens
+- [x] Alerta aos usuários quando alguém entrar ou sair.
+- [x] Otimizar o sistema de mensagens.
 - [ ] Auth com o Google Firebase
 - [ ] Nome à usuários.
 - [ ] Deploy na Heroku
-- [ ] Alerta aos usuários quando alguém entrar ou sair.
-- [ ] Otimizar o sistema de mensagens.
 - [ ] Add “{user} is typing” functionality.
 - [ ] Add private messaging.
 - [ ] Adicionar o projeto ao ReactJS
