@@ -12,17 +12,18 @@
 
 ## Todo list
 
-- [x] Inicialização do projeto
+- [x] Inicialização
+- [x] Compartilhar e documentar
 - [x] Chat funcional
+- [x] Motrar quem está online
+- [x] Histórico de mensagens
 - [ ] Auth com o Google Firebase
 - [ ] Nome à usuários.
-- [ ] Show who’s online.
 - [ ] Deploy na Heroku
 - [ ] Alerta aos usuários quando alguém entrar ou sair.
 - [ ] Otimizar o sistema de mensagens.
 - [ ] Add “{user} is typing” functionality.
 - [ ] Add private messaging.
-- [ ] Share your improvements!
 - [ ] Adicionar o projeto ao ReactJS
 
 ## Tecnologias utilizadas

@@ -18,7 +18,18 @@ socket.on('chat message', function (speaker, message) {
     messageList.append(messageElement);
 });
 
-// Receives a message
+socket.on('previousMessages', function (messages) {
+    for (const message in messages) {
+        if (messages.hasOwnProperty(message)) {
+            const element = messages[message];
+            const messageElement = document.createElement('li');
+            messageElement.innerHTML = `<b>[ ${element.speaker} ]</b> ${element.message}`;
+            messageList.append(messageElement);
+        }
+    }
+});
+
+// Receives a user update
 const usersList = document.getElementById('users');
 socket.on('users update', function (users) {
     usersList.innerHTML = '';
