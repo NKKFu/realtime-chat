@@ -12,24 +12,26 @@ const usersList = [];
 app.use(express.static('public'));
 
 io.on('connection', (socket) => {
+
     // Faz o buffer (atualização) para o usuário novato
-    socket.emit('previousMessages', messagesHistory);
+    const newUserMessage = { speaker: 'Server', message: `User Connected -> ${socket.id}` };
+    socket.emit('previous', messagesHistory, usersList);
+    io.emit('chat message', newUserMessage.speaker, newUserMessage.message);
+    messagesHistory.unshift(newUserMessage);
 
     // Mostra o novo usuário à todos
-    io.emit('users update', usersList);
-
-    console.log(`User Connected -> ${socket.id}`);
     usersList.push(socket.id);
+    io.emit('users add', socket.id);
 
     socket.on('disconnect', () => {
-        console.log(`User Disconnected -> ${socket.id}`);
+        io.emit('chat message', `Server`, `User Disconnected -> ${socket.id}`);
+
         usersList.splice(usersList.indexOf(socket.id), 1);
-        io.emit('users update', usersList);
+        io.emit('users remove', socket.id);
     });
 
     socket.on('chat message', (speaker, message) => {
         messagesHistory.push({ speaker, message });
-        console.log(`[ ${speaker} ] ${message}`);
         io.emit('chat message', speaker, message);
     });
 });
