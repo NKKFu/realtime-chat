@@ -43,4 +43,4 @@ Você pode criar uma issue ou um commit, saiba como:
 
 ## 📕 License
 
-Released in 2019. This project is under the (MIT license)[https://github.com/NKKFu/realtime-chat/blob/master/LICENSE].
+This project is under the [MIT license](https://github.com/NKKFu/realtime-chat/blob/master/LICENSE).
