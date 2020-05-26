@@ -1,6 +1,6 @@
 # 💬 Realtime Chat
 
-[![Languages](https://img.shields.io/github/languages/count/LauraBeatris/gofinances-api?style=flat-square)](#) [![Size](https://img.shields.io/github/repo-size/nkkfu/realtime-chat?style=flat-square)]() [![Size](https://img.shields.io/github/license/nkkfu/realtime-chat?style=flat-square)]()
+[![Languages](https://img.shields.io/github/languages/count/nkkfu/realtime-chat?style=flat-square)](#) [![Size](https://img.shields.io/github/repo-size/nkkfu/realtime-chat?style=flat-square)]() [![Size](https://img.shields.io/github/license/nkkfu/realtime-chat?style=flat-square)]()
 
 > Status: Em progresso (não deployado).. ⚒️
 
