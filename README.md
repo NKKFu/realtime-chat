@@ -1,4 +1,4 @@
-# Realtime Chat 💬
+# 💬 Realtime Chat
 
 [![Languages](https://img.shields.io/github/languages/count/LauraBeatris/gofinances-api?style=flat-square)](#) [![Size](https://img.shields.io/github/repo-size/nkkfu/realtime-chat?style=flat-square)]() [![Size](https://img.shields.io/github/license/nkkfu/realtime-chat?style=flat-square)]()
 
@@ -6,15 +6,15 @@
 
 > Descrição: Produzindo.. ⚒️
 
-## Imagens
+## 📸 Imagens
 
 > Produzindo.. ⚒️
 
-## Todo list
+## 📑 Todo list
 
 - [x] Inicialização
-- [x] Compartilhar e documentar
 - [x] Chat funcional
+- [x] Compartilhar e documentar
 - [x] Motrar quem está online
 - [x] Histórico de mensagens
 - [x] Alerta aos usuários quando alguém entrar ou sair.
@@ -26,22 +26,21 @@
 - [ ] Add private messaging.
 - [ ] Adicionar o projeto ao ReactJS
 
-## Tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 
 - Socket.io
 - Express
 - SCSS
 
-## Quer contribuir?
+## 🤝 Quer contribuir?
 
 Você pode criar uma issue ou um commit, saiba como:
+> Produzindo.. ⚒️
 
-### Criando uma issue
+## 👷 Installation
 
 > Produzindo.. ⚒️
 
-### Criando um commit
+## 📕 License
 
-> Produzindo.. ⚒️
-
-## LICENSE MIT
+Released in 2019. This project is under the (MIT license)[https://github.com/NKKFu/realtime-chat/blob/master/LICENSE].
