@@ -14,11 +14,10 @@ const usersList = document.getElementById('users');
 
 socket.on('chat message', function (speaker, message) {
     // Receives a message
+    renderMessage(speaker, message);
 
-    const messageElement = document.createElement('li');
-    messageElement.innerHTML = `<b>[ ${speaker} ]</b> ${message}`;
-
-    messageList.append(messageElement);
+    // Scroll para o fim das mensagens
+    messageList.scrollTo(0, messageList.scrollHeight);
 });
 
 socket.on('previous', function (messages, users) {
@@ -27,9 +26,7 @@ socket.on('previous', function (messages, users) {
 
         if (messages.hasOwnProperty(message)) {
             const element = messages[message];
-            const messageElement = document.createElement('li');
-            messageElement.innerHTML = `<b>[ ${element.speaker} ]</b> ${element.message}`;
-            messageList.append(messageElement);
+            renderMessage(element.speaker, element.message);
         }
     }
     console.log(users);
@@ -65,3 +62,9 @@ socket.on('users remove', function (user) {
         }
     }
 });
+
+function renderMessage(speaker, message) {
+    const messageElement = document.createElement('li');
+    messageElement.innerHTML = speaker ? `<b>[ ${speaker} ]</b> ${message}` : `${message}`;
+    messageList.append(messageElement);
+}

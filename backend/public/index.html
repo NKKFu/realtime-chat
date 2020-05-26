@@ -7,13 +7,16 @@
 </head>
 
 <body>
-    <div class="chat">
+    <form onsubmit="sendMessage();return false" class="chat">
         <h2>Realtime Chat</h2>
         <ul id="messages">
 
         </ul>
-        <input id="message_content" autocomplete="off" /><button onclick="sendMessage()">Send</button>
-    </div>
+        <div class="controllers">
+            <input id="message_content" placeholder="type a new message here.." autocomplete="off" />
+            <input id="message_button" type="submit" value="Send" />
+        </div>
+    </form>
     <div class="users_list">
         <h2>Users List</h2>
         <ul id="users">

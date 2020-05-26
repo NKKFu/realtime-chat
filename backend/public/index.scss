@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(92, 92, 92);
 }
 
 body {
@@ -10,19 +12,19 @@ body {
     width: 90vw;
     min-width: 500px;
     display: flex;
-    font-family: Arial;
 }
 
 .chat {
     background-color: rgb(248, 248, 248);
     width: 70%;
-    overflow-y: auto;
     h2 {
         padding: 20px;
     }
     #messages {
         background-color: rgb(230, 230, 230);
+        overflow-y: auto;
         min-height: 300px;
+        max-height: 300px;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -33,25 +35,36 @@ body {
             background: #eee;
         }
     }
-    input {
-        border: 0;
-        padding: 10px;
-        width: 90%;
-        height: 35px;
-        border: 2px solid rgb(130, 224, 255);
-    }
-    button {
-        height: 35px;
-        width: 10%;
-        background: rgb(130, 224, 255);
-        border: none;
-        padding: 10px;
+    .controllers {
+        display: flex;
+        #message_content {
+            border: 0;
+            padding: 10px;
+            flex: 9;
+            height: 40px;
+            border: 2px solid rgb(130, 224, 255);
+             ::-webkit-input-placeholder {
+                font-style: italic;
+            }
+        }
+        #message_content::-webkit-input-placeholder {
+            font-style: italic;
+        }
+        #message_button {
+            height: 40px;
+            flex: 1;
+            background: rgb(130, 224, 255);
+            color: rgb(68, 162, 194);
+            font-weight: bold;
+            border: none;
+            padding: 10px;
+        }
     }
 }
 
 .users_list {
     width: 30%;
-    background-color: rgb(227, 255, 227);
+    background-color: rgb(233, 255, 233);
     padding: 20px;
     h2 {
         margin-bottom: 30px;

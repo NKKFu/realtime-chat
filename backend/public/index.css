@@ -3,6 +3,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  color: #5c5c5c;
 }
 
 body {
@@ -13,13 +15,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: Arial;
 }
 
 .chat {
   background-color: #f8f8f8;
   width: 70%;
-  overflow-y: auto;
 }
 
 .chat h2 {
@@ -28,7 +28,9 @@ body {
 
 .chat #messages {
   background-color: #e6e6e6;
+  overflow-y: auto;
   min-height: 300px;
+  max-height: 300px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -42,25 +44,45 @@ body {
   background: #eee;
 }
 
-.chat input {
+.chat .controllers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chat .controllers #message_content {
   border: 0;
   padding: 10px;
-  width: 90%;
-  height: 35px;
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  height: 40px;
   border: 2px solid #82e0ff;
 }
 
-.chat button {
-  height: 35px;
-  width: 10%;
+.chat .controllers #message_content ::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.chat .controllers #message_content::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.chat .controllers #message_button {
+  height: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background: #82e0ff;
+  color: #44a2c2;
+  font-weight: bold;
   border: none;
   padding: 10px;
 }
 
 .users_list {
   width: 30%;
-  background-color: #e3ffe3;
+  background-color: #e9ffe9;
   padding: 20px;
 }
 
