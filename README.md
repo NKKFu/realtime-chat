@@ -1,6 +1,6 @@
 # 💬 Realtime Chat
 
-[![Languages](https://img.shields.io/github/languages/count/LauraBeatris/gofinances-api?style=flat-square)](#) [![Size](https://img.shields.io/github/repo-size/nkkfu/realtime-chat?style=flat-square)]() [![Size](https://img.shields.io/github/license/nkkfu/realtime-chat?style=flat-square)]()
+[![Languages](https://img.shields.io/github/languages/count/nkkfu/realtime-chat?style=flat-square)](#) [![Size](https://img.shields.io/github/repo-size/nkkfu/realtime-chat?style=flat-square)]() [![Size](https://img.shields.io/github/license/nkkfu/realtime-chat?style=flat-square)]()
 
 > Status: Em progresso (não deployado).. ⚒️
 
@@ -43,4 +43,4 @@ Você pode criar uma issue ou um commit, saiba como:
 
 ## 📕 License
 
-Released in 2019. This project is under the (MIT license)[https://github.com/NKKFu/realtime-chat/blob/master/LICENSE].
+This project is under the [MIT license](https://github.com/NKKFu/realtime-chat/blob/master/LICENSE).
