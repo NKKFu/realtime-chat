@@ -89,4 +89,17 @@ body {
 .users_list h2 {
   margin-bottom: 30px;
 }
+
+.footer {
+  font-weight: bold;
+  color: #c3c3c3;
+  width: 90vw;
+  bottom: 30px;
+  text-align: center;
+  position: fixed;
+}
+
+.footer a {
+  color: blue;
+}
 /*# sourceMappingURL=index.css.map */

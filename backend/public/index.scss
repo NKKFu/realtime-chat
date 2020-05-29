@@ -70,3 +70,15 @@ body {
         margin-bottom: 30px;
     }
 }
+
+.footer {
+    font-weight: bold;
+    color: rgb(195, 195, 195);
+    width: 90vw;
+    bottom: 30px;
+    text-align: center;
+    position: fixed;
+    a {
+        color: blue;
+    }
+}
