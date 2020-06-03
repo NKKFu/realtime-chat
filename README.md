@@ -2,15 +2,13 @@
 
 [![Languages](https://img.shields.io/github/languages/count/nkkfu/realtime-chat?style=flat-square)](#) [![Size](https://img.shields.io/github/repo-size/nkkfu/realtime-chat?style=flat-square)]() [![Size](https://img.shields.io/github/license/nkkfu/realtime-chat?style=flat-square)]()
 
-> Status: Em progresso (não deployado).. ⚒️
-
-> Descrição: Produzindo.. ⚒️
+Pequena aplicação de chat em tempo real utilizando Socket.io, Express e SCSS. Projetos para fins de estudos sobre serviços em tempo real 🥰
 
 ## 📸 Imagens
 
-> Produzindo.. ⚒️
+[tela de chat](https://i.ibb.co/Q9Z9bMq/Screenshot-1.png)
 
-## 📑 Todo list
+## 📑 Metas
 
 - [x] Inicialização
 - [x] Chat funcional
@@ -22,8 +20,7 @@
 - [ ] Auth com o Google Firebase
 - [ ] Nome à usuários.
 - [ ] Deploy na Heroku
-- [ ] Add “{user} is typing” functionality.
-- [ ] Add private messaging.
+- [ ] Adicionar “{user} is typing”
 - [ ] Adicionar o projeto ao ReactJS
 
 ## 🚀 Tecnologias utilizadas
@@ -32,15 +29,41 @@
 - Express
 - SCSS
 
-## 🤝 Quer contribuir?
+## ⚒ Como usar
 
-Você pode criar uma issue ou um commit, saiba como:
-> Produzindo.. ⚒️
+- ### **Pré-requisitos**
 
-## 👷 Installation
+  - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado na máquina
+  - Também, é **preciso** ter um gerenciador de pacotes seja o **[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**.
 
-> Produzindo.. ⚒️
+1. Faça um clone :
+
+```sh
+  $ git clone https://github.com/NKKFu/realtime-chat.git
+```
+
+2. Executando a Aplicação:
+
+```sh
+  # Instale as dependências
+  # Usando o NPM
+  $ npm install
+  
+  # Ou com o Yarn
+  $ yarn install
+```
+
+```sh
+  # Inicie a aplicação com o NodeJS
+  $ node /backend/index.js
+```
 
 ## 📕 License
 
 This project is under the [MIT license](https://github.com/NKKFu/realtime-chat/blob/master/LICENSE).
+
+---
+
+<h4 align="center">
+    Feito com ❤️ by <b>Nelson Kenmochi</b>
+</h4>
