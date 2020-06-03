@@ -9,7 +9,7 @@ const messagesHistory = [];
 const usersList = [];
 
 // Disponibiliza todos os caminhos do diretório public
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 io.on('connection', (socket) => {
 
