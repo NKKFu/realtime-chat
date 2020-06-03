@@ -6,7 +6,7 @@ Pequena aplicação de chat em tempo real utilizando Socket.io, Express e SCSS. 
 
 ## 📸 Imagens
 
-[tela de chat](https://i.ibb.co/Q9Z9bMq/Screenshot-1.png)
+![tela de chat](https://i.ibb.co/Q9Z9bMq/Screenshot-1.png)
 
 ## 📑 Metas
 
